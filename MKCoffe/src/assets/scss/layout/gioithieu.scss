@@ -1,4 +1,46 @@
 #main {
     background-color: white;
-    padding-left: 245px;
+    padding: 65px 0 80px;
+    .container {
+        padding: 0;
+        .section {
+            &-h2 {
+                display: inline-block;
+                font-size: 45px;
+                line-height: 70px;
+                border-bottom: 5px solid $colorMain;
+                margin-top: 25px!important;
+                font-weight: bold;
+            }
+            &-h3 {
+                font-size: 30px;
+                line-height: 60px;
+                color: $colorMain;
+                font-weight: bold;
+                padding: 10px 0;
+            }
+            &-6 {
+                font-size: 16px;
+                line-height: 28px;
+                color: #090640;
+            }
+        }
+    }
+}
+
+.box__section {
+    &--content {
+        padding: 20px 0 60px;
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+.fill-shadow {
+    box-shadow: 1px 3px #e0e0e0;
+}
+
+.py-40 {
+    padding: 40px 0;
 }
