@@ -1,0 +1,37 @@
+.box {
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 7px 0;
+        a {
+            color: white;
+            font-size: 19px;
+            line-height: 51px;
+            margin-left: 30px;
+        }
+        button {
+            color: white;
+            font-size: 28px;
+            margin-left: 30px;
+        }
+    }
+    &__left {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 90px;
+        width: 100px;
+        border-right: 1px solid $colorMain;
+        &--logo {
+            position: absolute;
+            margin-top: 65px;
+            top: 0;
+            background-color: $colorMain;
+            padding: 6px;
+        }
+    }
+}
+
