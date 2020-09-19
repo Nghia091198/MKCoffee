@@ -1,46 +1,33 @@
-.box {
-    &__header {
+.section {
+    &-1 {
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-        padding: 7px 0;
-        a {
-            color: white;
-            font-size: 19px;
-            line-height: 51px;
-            margin-left: 30px;
-        }
-        button {
-            color: white;
-            font-size: 28px;
-            margin-left: 30px;
-        }
-    }
-    &__left {
-        position: fixed;
         background-color: $colorBody;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-        left: 0;
-        padding-top: 90px;
-        width: 100px;
-        border-right: 1px solid $colorMain;
-        z-index: 9999;
-        &--logo {
-            position: absolute;
-            margin-top: 65px;
-            top: 0;
-            background-color: $colorMain;
-            padding: 6px;
+        font-size: 19px;
+        line-height: 55px;
+        color: white;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            a {
+                margin-left: 30px;
+                color: white;
+            }
         }
     }
-}
-
-.bg-custom {
-    background-color: $colorBody;
-    width: 100%;
-    .container {
-        padding: 0;
+    &-left {
+        position: fixed;
+        max-width: 100px;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        border-right: 1px solid $colorMain;
+        background-color: $colorBody;
+        &--logo {
+            margin-top: 54px;
+        }
     }
 }
