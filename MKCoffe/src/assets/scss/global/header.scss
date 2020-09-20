@@ -1,33 +1,66 @@
-.section {
-    &-1 {
-        position: fixed;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        background-color: $colorBody;
-        font-size: 19px;
-        line-height: 55px;
-        color: white;
-        .container {
+    .section {
+        &-1 {
+            position: fixed;
+            width: 100%;
             display: flex;
             justify-content: flex-end;
-            padding: 0;
+            background-color: $colorBody;
+            align-items: center;
+            font-size: 19px;
+            line-height: 55px;
+            right: 0;
+            z-index: 9999;
             a {
-                margin-left: 30px;
                 color: white;
+                margin: 0 15px;
+            }
+            button {
+                span {
+                    display: block;
+                    color: white;
+                    margin-right: 10px;
+                    font-size: 27px;
+                }
+            }
+        }
+        &-left {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100px;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            border-right: 1px solid $colorMain;
+            background-color: $colorBody;
+            z-index: 9999;
+            &--logo {
+                margin-top: 54px;
+            }
+        }
+        &-menu {
+            margin-bottom: 85px;
+            width: 45%;
+            border-top: 1px solid #cea31a;
+            border-bottom: 1px solid #cea31a;
+            height: 30px;
+            cursor: pointer;
+            &::before {
+                content: '';
+                width: 25px;
+                display: block;
+                height: 1px;
+                top: 50%;
+                position: relative;
+                background-color: $colorMain;
             }
         }
     }
-    &-left {
-        position: fixed;
-        max-width: 100px;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        border-right: 1px solid $colorMain;
-        background-color: $colorBody;
-        &--logo {
-            margin-top: 54px;
+    
+    header {
+        .container {
+            margin: 0;
         }
     }
-}

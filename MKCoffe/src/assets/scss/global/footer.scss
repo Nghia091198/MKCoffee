@@ -1,0 +1,112 @@
+footer {
+    padding-left: 100px;
+    background-color: $colorBody;
+    color: #f3f3f4;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.section {
+    &__5 {
+        display: flex;
+        max-width: 916px;
+        width: 100%;
+        padding: 85px 0 185px;
+        padding-bottom: 75px;
+        border-bottom: 2px dashed $colorBorder;
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            align-items: center;
+            button {
+                display: flex;
+                align-items: center;
+                span:first-child {
+                    color: #f3f3f4;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                span:last-child {
+                    font-size: 27px;
+                    color: $colorMain;
+                    line-height: 56px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        &-content {
+            max-width: 525px;
+            width: 100%;
+        }
+        &-logo {
+            position: absolute;
+            right: 4%;
+            top: 27%;
+        }
+    }
+    &__6 {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    &__7 {
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-top: 70px;
+        &-content {
+            display: flex;
+            max-width: 916px;
+            justify-content: space-between;
+        }
+        &-item p,
+        &-item a {
+            margin-bottom: 30px!important;
+        }
+        &-item a {
+            display: block;
+            color: #f3f3f4;
+            &:hover {
+                color: unset;
+                text-decoration: none;
+            }
+        }
+    }
+    &__8 {
+        padding: 200px 0 70px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+form {
+    max-width: 445px;
+    >input {
+        width: 100%;
+        background-color: unset;
+        border: unset;
+        border-bottom: 2px solid $colorBorder;
+        padding: 10px;
+        color: #f3f3f4;
+    }
+}
+
+.link {
+    &__social {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px 8px;
+        color: #f3f3f4;
+        margin-right: 15px;
+        margin-top: 20px;
+        display: inline-flex;
+        &:hover {
+            color: unset;
+            text-decoration: none;
+        }
+        i {
+            font-size: 18px;
+        }
+    }
+}

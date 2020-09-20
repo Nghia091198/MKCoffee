@@ -1,14 +1,30 @@
-header {
-    padding-top: 54px;
+main {
+    padding-top: 55px;
     padding-left: 100px;
-    .container {
-        padding: 0;
-    }
+    padding-bottom: 75px;
 }
 
 .section {
     &-2 {
         padding-top: 60px;
+        margin-bottom: 25px;
+    }
+    &-3 {
+        display: flex;
+        justify-content: space-between;
+        &--item {
+            max-width: 211px;
+            position: relative;
+            width: 100%;
+            img {
+                height: 190px;
+                object-fit: contain;
+            }
+        }
+    }
+    &-4 {
+        padding-left: 100px;
+        background-color: #fff8e6;
     }
 }
 
@@ -16,8 +32,26 @@ header {
     &-1 {
         font-size: 45px;
         line-height: 75px;
-        color: $colorFont;
+        color: $colorContent;
         border-bottom: 4px solid $colorMain;
         display: inline-block;
     }
+    &-3 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 60px;
+        color: $colorMain;
+    }
+}
+
+.content {
+    &-1 {
+        color: $colorContent;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.p-7 {
+    padding: 75px 0;
 }
