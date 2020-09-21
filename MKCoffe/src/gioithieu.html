@@ -29,6 +29,19 @@
                 Liên hệ
             </a>
         </div>
+        <div class="section__search">
+            <form class="box__search">
+                <input type="text" required placeholder="Bạn muốn tìm gì?">
+                <button type="submit">
+                    <span class="material-icons icon-search">
+                        search
+                    </span>
+                </button>
+            </form>
+            <button class="btn-close">
+                X
+            </button>
+        </div>
     </header>
     <div class="section-left">
         <div class="section-left--logo">
@@ -37,7 +50,56 @@
         <div class="section-menu">
 
         </div>
+        <button class="section-back">
+            <span class="lnr lnr-arrow-left"></span>
+        </button>
+    </div>
 
+    <div class="section__navigation">
+        <img src="./assets/img/gioithieu/Layer26.png" alt="mkcoffee">
+        <div class="navigation-box">
+            <!-- -------1-------- -->
+            <a href="#">
+                Trang chủ
+            </a>
+            <!-- -------2-------- -->
+            <a href="#">
+                Giới Thiệu
+            </a>
+            <!-- -------3-------- -->
+            <a href="#">
+                Sản Phẩm
+            </a>
+            <!-- -------4-------- -->
+            <a href="#">
+                Năng Lực Sản Xuất
+            </a>
+            <!-- -------5-------- -->
+            <a href="#">
+                Hỗ Trợ Khách Hàng
+            </a>
+            <!-- -------6-------- -->
+            <a href="#">
+                Tin Tức - Sự kiện
+            </a>
+            <!-- -------7-------- -->
+            <a href="#">
+                Liên Hệ
+            </a>
+            <div class="navigation-social">
+                <a href="#" class="link__social">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="link__social">
+                    <i class="ri-play-fill"></i>
+                </a>
+                <a href="#" class="link__social">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </div>
+        </div>
+
+        
     </div>
     <main>
         <div class="container">
@@ -47,11 +109,11 @@
                 </h1>
             </div>
             <!-- -------1-------- -->
-            <div class="row">
-                <div class="col-lg-6 col-md-5 col-sm-12 p-0">
+            <div class="row mob-reverse">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0">
                     <img src="./assets/img/gioithieu/gioithieu_03.jpg" alt="mkcoffee">
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="row pt-3">
                         <div class="col-12">
                             <h3 class="title-3">
@@ -71,10 +133,10 @@
             </div>
             <!-- -------2-------- -->
             <div class="row flex-row-reverse p-7">
-                <div class="col-lg-6 col-md-5 col-sm-12 p-0">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0">
                     <img src="./assets/img/gioithieu/Layer 33.png" alt="mkcoffee">
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="row p-0">
                         <div class="col-12">
                             <h3 class="title-3">
@@ -105,11 +167,11 @@
                 </div>
             </div>
             <!-- -------3-------- -->
-            <div class="row">
-                <div class="col-lg-6 col-md-5 col-sm-12 p-0">
+            <div class="row mob-reverse">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0">
                     <img src="./assets/img/gioithieu/gioithieu04_03.jpg" alt="mkcoffee">
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="row pt-3">
                         <div class="col-12">
                             <h3 class="title-3">
@@ -187,7 +249,7 @@
                             ĐỂ NHẬN CÁC ƯU ĐÃI ĐẾN TỪ MK COFFEE
                         </p>
                         <!-- Form Email -->
-                        <form action="/">
+                        <form action="/" class="form-email">
                             <div class="section__5-form">
                                 <label for="email">
                             ĐỊA CHỈ EMAIL

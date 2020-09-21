@@ -12,10 +12,12 @@ main {
     &-3 {
         display: flex;
         justify-content: space-between;
+        
         &--item {
             max-width: 211px;
             position: relative;
             width: 100%;
+            margin: 5px;
             img {
                 height: 190px;
                 object-fit: contain;
@@ -54,4 +56,43 @@ main {
 
 .p-7 {
     padding: 75px 0;
+}
+
+@media only screen and (max-width:769px) {
+    .mob-reverse {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .row.flex-row-reverse {
+        flex-direction: column-reverse!important;
+        padding: 0!important;
+    }
+
+    .section {
+        &-left {
+            max-width: 70px;
+        }
+        &-2 {
+            margin-bottom: 0;
+            padding-top: 40px;
+        }
+        &-3 {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        
+    }
+
+    .content {
+        &-1 {
+            padding: 0;
+        }
+    }
+    .col-lg-6.col-md-12.col-sm-12 {
+        padding: 10px 0 0!important;
+    }
+
+
 }

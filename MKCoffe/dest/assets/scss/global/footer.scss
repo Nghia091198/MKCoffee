@@ -57,20 +57,23 @@ footer {
         padding-top: 70px;
         &-content {
             display: flex;
+            flex-wrap: wrap;
             max-width: 916px;
             justify-content: space-between;
         }
         &-item p,
         &-item a {
             margin-bottom: 30px!important;
-        }
-        &-item a {
             display: block;
             color: #f3f3f4;
             &:hover {
                 color: unset;
                 text-decoration: none;
             }
+        }
+        &-item {
+            margin-right: 5px;
+            
         }
     }
     &__8 {
@@ -80,7 +83,7 @@ footer {
     }
 }
 
-form {
+.form-email {
     max-width: 445px;
     >input {
         width: 100%;
@@ -110,3 +113,36 @@ form {
         }
     }
 }
+
+@media only screen and (max-width: 1360px) {
+    .section {
+        &__5 {
+            &-logo {
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .section {
+        &__5 {
+            display: block;
+            padding-bottom: 40px;
+            &-social {
+                margin-top: 20px;
+            }
+        }
+        &__7 {
+            &-item {
+                width: 205px;
+                margin-right: 10px;
+            }
+            &-content {
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
