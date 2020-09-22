@@ -1,0 +1,62 @@
+.section__11 {
+    &-box {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &--item {
+        border: 2px solid $colorMain;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &--see {
+        position: absolute;
+        max-width: 200px;
+        max-height: 65px;
+        width: 100%;
+        padding: 10px 60px 10px 15px;
+        bottom: -30px;
+        background-color: rgba(1, 19, 33, 12);
+        .title {
+            &-h4 {
+                font-size: 16px;
+                color: $colorMain;
+                font-weight: bold;
+            }
+        }
+        a {
+            font-size: 16px;
+            color: $colorMain;
+            &:hover {
+                color: $colorMain;
+            }
+        }
+    }
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.swiper-sp {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .mt-60 {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .mt--60 {
+        margin-top: 60px;
+    }
+}
