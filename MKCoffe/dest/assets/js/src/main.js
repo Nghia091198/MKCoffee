@@ -9,7 +9,7 @@ btnOpen.onclick = function() {
 };
 
 btnClose.onclick = function() {
-    frmSearch.classList.remove('active'); 
+    frmSearch.classList.remove('active');
     frm.style.width = "0";
 };
 
@@ -34,4 +34,23 @@ btnClose.onclick = function() {
     btnClose.classList.remove("active");
 }
 
+// Collapse
 
+var btnCollapse = document.querySelectorAll(".collapse-open");
+var btnCollapseActive = document.querySelectorAll(".collapse-active");
+
+for (var i = 0; i < btnCollapse.length; i++) {
+    btnCollapse[i].addEventListener("click", function() {
+        this.classList.toggle("coll-active");
+        var content = document.querySelector(".coll-content");
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+
+        console.log(this);
+        console.log(content);
+
+    })
+}
