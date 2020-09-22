@@ -6,13 +6,12 @@ main {
 
 .section {
     &-2 {
-        padding-top: 60px;
+        padding-top: 25px;
         margin-bottom: 25px;
     }
     &-3 {
         display: flex;
         justify-content: space-between;
-        
         &--item {
             max-width: 211px;
             position: relative;
@@ -63,12 +62,10 @@ main {
         flex-direction: column-reverse;
         padding: 0;
     }
-
     .row.flex-row-reverse {
         flex-direction: column-reverse!important;
         padding: 0!important;
     }
-
     .section {
         &-left {
             max-width: 70px;
@@ -83,9 +80,7 @@ main {
             text-align: center;
             justify-content: center;
         }
-        
     }
-
     .content {
         &-1 {
             padding: 0;
@@ -94,18 +89,17 @@ main {
     .col-lg-6.col-md-12.col-sm-12 {
         padding: 10px 0 0!important;
     }
-
     .title {
         &-1 {
             font-size: 30px;
             text-align: center;
-            
         }
     }
 }
 
-@media only screen and (max-width: 481px){
-    main, footer {
+@media only screen and (max-width: 481px) {
+    main,
+    footer {
         padding-top: 30px;
         padding-left: 70px;
     }
