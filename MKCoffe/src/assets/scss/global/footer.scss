@@ -5,6 +5,7 @@ footer {
     font-size: 15px;
     font-weight: bold;
     line-height: 30px;
+    position: relative;
 }
 
 .section {
@@ -81,6 +82,31 @@ footer {
         display: flex;
         justify-content: flex-end;
     }
+    &__9 {
+        position: absolute;
+        width: 0;
+        top: 45%;
+        display: flex;
+        right: 0;
+        flex-direction: column;
+        &-slide {
+            position: relative;
+            display: block;
+            bottom: 0;
+            width: 10px;
+            right: 30px;
+            background-color: #333333;
+            height: 10px;
+            border-radius: 50%;
+            margin: 10px 0;
+            padding: 5px;
+            &:hover {
+                border: 1px solid white;
+                transform: scale(1.5);
+                transition: all .3s;
+            }
+        }
+    }
 }
 
 .form-email {
@@ -125,13 +151,42 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1025px) {
+    .section {
+        &__5 {
+            &-social {
+                min-width: 177px;
+                margin: 0 15px;
+            }
+        }
+        &__7 {
+            &-item {
+                min-width: 45%;
+                text-align: center;
+            }
+            &-content {
+                justify-content: space-around;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 769px) {
     .section {
         &__5 {
             display: block;
             padding-bottom: 40px;
+            padding-top: 30px;
+            font-size: 13px;
             &-social {
+                margin: 0;
                 margin-top: 20px;
+            }
+            &-logo {
+                margin-left: 50px;
+                padding-top: 150px;
+            }
+            &-form {
+                display: block;
             }
         }
         &__7 {
@@ -139,9 +194,7 @@ footer {
                 width: 205px;
                 margin-right: 10px;
             }
-            &-content {
-                justify-content: space-around;
-            }
+            
         }
     }
 }

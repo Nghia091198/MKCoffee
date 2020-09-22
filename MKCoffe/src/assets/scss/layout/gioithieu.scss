@@ -35,7 +35,7 @@ main {
         font-size: 45px;
         line-height: 75px;
         color: $colorContent;
-        border-bottom: 4px solid $colorMain;
+        border-bottom: 8px solid $colorMain;
         display: inline-block;
     }
     &-3 {
@@ -76,6 +76,7 @@ main {
         &-2 {
             margin-bottom: 0;
             padding-top: 40px;
+            text-align: center;
         }
         &-3 {
             flex-wrap: wrap;
@@ -94,5 +95,23 @@ main {
         padding: 10px 0 0!important;
     }
 
+    .title {
+        &-1 {
+            font-size: 30px;
+            text-align: center;
+            
+        }
+    }
+}
 
+@media only screen and (max-width: 481px){
+    main, footer {
+        padding-top: 30px;
+        padding-left: 70px;
+    }
+    .section {
+        &-4 {
+            padding-left: 70px;
+        }
+    }
 }
