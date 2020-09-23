@@ -37,20 +37,17 @@ btnClose.onclick = function() {
 // Collapse
 
 var btnCollapse = document.querySelectorAll(".collapse-open");
-var btnCollapseActive = document.querySelectorAll(".collapse-active");
+var olBox = document.querySelector(".section__12-ol");
 
 for (var i = 0; i < btnCollapse.length; i++) {
     btnCollapse[i].addEventListener("click", function() {
-        this.classList.toggle("coll-active");
-        var content = document.querySelector(".coll-content");
-        if (content.style.display === "block") {
+       olBox.classList.toggle("coll-active");
+       var content = olBox.nextElementSibling;
+            if (content.style.display){
             content.style.display = "none";
-        } else {
+            } else {
             content.style.display = "block";
-        }
-
+            } 
         console.log(this);
-        console.log(content);
-
     })
 }

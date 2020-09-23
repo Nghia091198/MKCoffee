@@ -1,0 +1,134 @@
+.section {
+    &__13 {
+        &--content {
+            font-size: 16px;
+            color: $colorMain;
+            line-height: 28px;
+            margin-top: 15px!important;
+        }
+        &-box {
+            position: relative;
+        }
+        &--see {
+            position: absolute;
+            font-size: 12px;
+            line-height: 22px;
+            color: #cea31a;
+            bottom: -45px;
+            margin: 0 120px;
+            padding: 10px;
+            background-color: #011321;
+            text-align: left;
+        }
+    }
+    &__14 {
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 45%;
+            margin-top: 15px;
+            padding: 5px 0 5px 15px;
+            border: 1px solid #e0e0e0;    
+        }
+        ::placeholder {
+            color: #999999;
+        }
+        &.w-90 {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+        textarea {
+            margin-top: 15px;
+            padding: 5px 0 5px 15px;
+            border: 1px solid #e0e0e0; 
+        }
+    }   
+}
+
+.submit-lh {
+    margin-top: 20px;
+}
+.btn-submit {
+    padding: 10px 70px;
+    background-color: $colorMain;
+    font-size: 18px;
+    color: white;
+}
+
+// Swiper
+
+.swiper-lh {
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.swiper-button-next:after
+ {
+    content: ""!important;
+}
+.swiper-button-prev:after
+ {
+    content: ""!important;
+}
+
+.swiper-button-next span,
+.swiper-button-prev span {
+    font-size: 39px!important;
+    color: #aaa9bd;
+    opacity: 90%;
+    transform: scaleX(2);
+}
+
+.swiper-button-next { 
+    right: 0!important;
+    top: 40%!important;
+}
+.swiper-button-prev { 
+    left: 5px!important;
+    top: 40%!important;
+}
+
+.swiper-button-next span:hover,
+.swiper-button-prev span:hover {
+    color: $colorMain!important;
+}
+//End Swiper 
+
+@media only screen and (max-width: 1025px) {
+    .section {
+        &__13 {
+            &--see {
+                margin: 0 50px;
+            }
+        }
+    }
+
+    .swiper-button-next span,
+    .swiper-button-prev span {
+        font-size: 39px!important;
+        color: #aaa9bd;
+        opacity: 90%;
+        transform: scaleX(1);
+    }
+    .swiper-button-prev { 
+        left: 0px!important;
+        top: 40%!important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section {
+        &__13 {
+            &--see {
+                position: relative;
+                margin: 0;
+                bottom: 0;
+            }
+        }
+    }
+    .swiper-lh {
+        padding-bottom: 30px;
+    }
+}
