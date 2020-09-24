@@ -18,3 +18,58 @@ var swiper = new Swiper('.swiper-sp', {
         },
     },
 });
+
+// Chi tiet san pham
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 1,
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    thumbs: {
+        swiper: galleryThumbs
+    }
+});
+
+var swiper = new Swiper('.swiper-ctsp-2', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 20,
+    // slidesPerView: 4,
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        // 640: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20,
+        // },
+        // 768: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40,
+        // },
+        768: {
+            autoplay: {
+                delay: 2300,
+                disableOnInteraction: false,
+            },
+        },
+        1200: {
+            autoplay: {
+                delay: 999999,
+                disableOnInteraction: false,
+
+            },
+        }
+    }
+});

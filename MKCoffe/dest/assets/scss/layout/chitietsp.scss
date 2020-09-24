@@ -178,12 +178,12 @@
         }
         
         .swiper-button-next-ctsp {
-            right: 0!important;
+            right: 12px!important;
             top: 50%!important;
         }
         
         .swiper-button-prev-ctsp {
-            left: -15px!important;
+            left: -4px!important;
             top: 50%!important;
         }
         
@@ -205,9 +205,7 @@
             .swiper-button-next-ctsp {
                 display: none!important;
             }
-            .swiper-ctsp-2 {
-                max-width: 660px;
-            }
+            
         }
         
         @media only screen and (max-width: 1025px) {
@@ -216,6 +214,11 @@
             }
             .swiper-button-next-ctsp {
                 display: none!important;
+            }
+            .section__23--see {
+              // max-width: ;
+              padding: 15px 0;
+              max-width: 130px;
             }
         }
         
