@@ -36,18 +36,32 @@ btnClose.onclick = function() {
 
 // Collapse
 
-var btnCollapse = document.querySelectorAll(".collapse-open");
-var olBox = document.querySelector(".section__12-ol");
+// var btnCollapse = document.querySelectorAll(".btn-collapse");
 
-for (var i = 0; i < btnCollapse.length; i++) {
-    btnCollapse[i].addEventListener("click", function() {
-       olBox.classList.toggle("coll-active");
-       var content = olBox.nextElementSibling;
-            if (content.style.display){
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
-            } 
-        console.log(this);
-    })
+// for (var i = 0; i < btnCollapse.length; i++) {
+//     btnCollapse[i].addEventListener("click", function() {
+//         this.classList.toggle("active-coll");
+//        var content = this.nextElementSibling;
+//        if (content.style.display === "block") {
+//         content.style.display = "none";
+//       } else {
+//         content.style.display = "block";
+//       }
+//     });
+// }
+
+var coll = document.getElementsByClassName("btn-collapse");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-coll");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+  });
 }
+
