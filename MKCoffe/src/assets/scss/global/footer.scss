@@ -6,6 +6,7 @@ footer {
     font-weight: bold;
     line-height: 30px;
     position: relative;
+    background: url(../../assets/img/gioithieu/Layer26.png) repeat;
 }
 
 .section {
@@ -13,13 +14,13 @@ footer {
         display: flex;
         max-width: 916px;
         width: 100%;
-        padding: 85px 0 185px;
-        padding-bottom: 75px;
+        padding: 95px 0 185px;
+        padding-bottom: 70px;
         border-bottom: 2px dashed $colorBorder;
         &-form {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin-top: 23px;
             align-items: center;
             button {
                 display: flex;
@@ -32,8 +33,16 @@ footer {
                 span:last-child {
                     font-size: 27px;
                     color: $colorMain;
-                    line-height: 56px;
                     margin-left: 10px;
+                }
+                &:hover {
+                    span {
+                        color: $colorMain;
+                        transition: all .3s ease-in-out;
+                    }
+                    span:last-child {
+                        color: white;
+                    }
                 }
             }
         }
@@ -78,35 +87,11 @@ footer {
         }
     }
     &__8 {
-        padding: 200px 0 70px;
+        padding: 130px 0 60px;
         display: flex;
         justify-content: flex-end;
     }
-    &__9 {
-        position: absolute;
-        width: 0;
-        top: 45%;
-        display: flex;
-        right: 0;
-        flex-direction: column;
-        &-slide {
-            position: relative;
-            display: block;
-            bottom: 0;
-            width: 10px;
-            right: 30px;
-            background-color: #333333;
-            height: 10px;
-            border-radius: 50%;
-            margin: 10px 0;
-            padding: 5px;
-            &:hover {
-                border: 1px solid white;
-                transform: scale(1.5);
-                transition: all .3s;
-            }
-        }
-    }
+    
 }
 
 .form-email {
@@ -116,8 +101,11 @@ footer {
         background-color: unset;
         border: unset;
         border-bottom: 2px solid $colorBorder;
-        padding: 10px;
+        padding: 0 10px;
         color: #f3f3f4;
+    }
+    label {
+        margin: 0;
     }
 }
 
@@ -125,14 +113,21 @@ footer {
     &__social {
         border: 1px solid white;
         border-radius: 50%;
-        padding: 5px 8px;
+        width: 35px;
+        height: 35px;
         color: #f3f3f4;
         margin-right: 15px;
         margin-top: 20px;
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
         &:hover {
             color: unset;
             text-decoration: none;
+            border:
+            none;
+            background-color: $colorMain;
+            transition: all .5s;
         }
         i {
             font-size: 18px;

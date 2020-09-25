@@ -60,8 +60,9 @@ for (i = 0; i < coll.length; i++) {
     if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+         content.style.maxHeight = "100%";
       } 
   });
 }
 
+// Full Page

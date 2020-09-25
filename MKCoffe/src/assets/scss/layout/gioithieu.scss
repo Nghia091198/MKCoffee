@@ -1,6 +1,5 @@
 main {
     padding-top: 55px;
-    padding-left: 100px;
     padding-bottom: 75px;
 }
 
@@ -24,8 +23,13 @@ main {
         }
     }
     &-4 {
+        padding-top: 70px;
         padding-left: 100px;
         background-color: #fff8e6;
+        height: unset!important;
+        div {
+            height: unset!important;
+        }
     }
 }
 
@@ -36,6 +40,7 @@ main {
         color: $colorContent;
         border-bottom: 8px solid $colorMain;
         display: inline-block;
+        font-weight: 700;
     }
     &-3 {
         font-size: 30px;
@@ -55,6 +60,24 @@ main {
 
 .p-7 {
     padding: 75px 0;
+}
+
+.shadow-fill {
+    box-shadow: 6px 6px rgba($color: #f1f1f1, $alpha: 0.8);
+}
+
+@media only screen and (max-width:1460px) {
+    main { 
+        margin-left: 110px!important;
+        margin-right: 45px;
+    }
+    header {
+        .container {
+            margin: 0;
+            margin-right:45px;
+        }
+        
+    }
 }
 
 @media only screen and (max-width:769px) {
