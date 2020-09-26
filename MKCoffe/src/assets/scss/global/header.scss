@@ -36,7 +36,6 @@
                         transition: all .3s ease-in-out;
                         color: $colorMain;
                     }
-                    
                 }
             }
         }
@@ -151,8 +150,6 @@
     }
     
     .active {
-        opacity: 1!important;
-        display: block!important;
         &-2 {
             background-color: rgba(3, 19, 32, 0.8);
             margin-left: 350px;
@@ -167,6 +164,10 @@
             width: 350px;
             left: 0;
             z-index: 9999;
+        }
+        &-1 {
+            opacity: 1!important;
+            display: block!important;
         }
     }
     
@@ -201,7 +202,7 @@
             }
         }
     }
-
+    
     @media only screen and (max-width: 768px) {
         .section__search .box__search input {
             width: 50%;

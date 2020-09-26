@@ -1,33 +1,49 @@
  #fullpage {
-//     margin-top: 65px;
-//     margin-left: 100px;
-     transform: translate3d(15%)!important;
+     //     margin-top: 65px;
+     //     margin-left: 100px;
+     //  transform: translate3d(0px, 800px, 0px)!important;
  }
-.fp-tableCell,.fp-section.fp-table, .fp-slide.fp-table {
-    // display: block!important;
-}
-
-.section-footer {
-    background-color: #031320;
-    color: #f3f3f4;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 30px;
-    max-height: 820px;
-    position: relative;
-    background: url(../../assets/img/gioithieu/Layer26.png) repeat;
-    margin-top: 60px;
-}
-
-.section,.fp-tableCell {
-    // height: 100%!important;
-}
-// Nav
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: #333333!important;
-    width: 10px;
-    height: 10px;
-}
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
-    transform: scale(1.2);
-}
+ 
+ .fp-tableCell,
+ .fp-section.fp-table,
+ .fp-slide.fp-table {
+     // display: block!important;
+ }
+ 
+ .fp-responsive .section,
+ .fp-responsive .section .fp-slide,
+ .fp-responsive .section .fp-tableCell {
+     height: auto !important;
+ }
+ 
+ .section-footer {
+     background-color: #031320;
+     color: #f3f3f4;
+     font-size: 15px;
+     font-weight: bold;
+     line-height: 30px;
+     max-height: 820px;
+     position: relative;
+     background: url(../../assets/img/gioithieu/Layer26.png) repeat;
+     margin-top: 60px;
+ }
+ 
+ .section,
+ .fp-tableCell {
+     // height: 100%!important;
+ }
+ 
+ // Nav
+ #fp-nav ul li a span,
+ .fp-slidesNav ul li a span {
+     background: #333333!important;
+     width: 10px;
+     height: 10px;
+ }
+ 
+ #fp-nav ul li a.active span,
+ .fp-slidesNav ul li a.active span,
+ #fp-nav ul li:hover a.active span,
+ .fp-slidesNav ul li:hover a.active span {
+     transform: scale(1.2);
+ }
