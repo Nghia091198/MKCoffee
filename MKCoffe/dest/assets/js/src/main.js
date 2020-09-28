@@ -36,19 +36,6 @@ btnClose.onclick = function() {
 
 // Collapse
 
-// var btnCollapse = document.querySelectorAll(".btn-collapse");
-
-// for (var i = 0; i < btnCollapse.length; i++) {
-//     btnCollapse[i].addEventListener("click", function() {
-//         this.classList.toggle("active-coll");
-//        var content = this.nextElementSibling;
-//        if (content.style.display === "block") {
-//         content.style.display = "none";
-//       } else {
-//         content.style.display = "block";
-//       }
-//     });
-// }
 
 var coll = document.getElementsByClassName("btn-collapse");
 var i;
@@ -66,3 +53,8 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Full Page
+
+var root = document.getElementsByTagName("html");
+var activing = document.querySelector("active-2", "active-1");
+
+onload.name;

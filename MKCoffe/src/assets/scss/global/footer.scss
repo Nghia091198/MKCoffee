@@ -16,7 +16,7 @@ footer {
         width: 100%;
         padding: 95px 0 185px;
         padding-bottom: 70px;
-        border-bottom: 2px dashed $colorBorder;
+        border-bottom: 2px dashed $colorMain;
         &-form {
             display: flex;
             justify-content: space-between;
@@ -52,7 +52,7 @@ footer {
         }
         &-logo {
             position: absolute;
-            right: 4%;
+            right: 2%;
             top: 27%;
         }
     }
@@ -62,7 +62,6 @@ footer {
         position: relative;
     }
     &__7 {
-        text-transform: uppercase;
         font-weight: normal;
         padding-top: 70px;
         &-content {
@@ -83,15 +82,14 @@ footer {
         }
         &-item {
             margin-right: 5px;
-            
         }
     }
     &__8 {
         padding: 130px 0 60px;
         display: flex;
+        font-weight: normal;
         justify-content: flex-end;
     }
-    
 }
 
 .form-email {
@@ -100,7 +98,7 @@ footer {
         width: 100%;
         background-color: unset;
         border: unset;
-        border-bottom: 2px solid $colorBorder;
+        border-bottom: 2px solid $colorMain;
         padding: 0 10px;
         color: #f3f3f4;
     }
@@ -124,8 +122,7 @@ footer {
         &:hover {
             color: unset;
             text-decoration: none;
-            border:
-            none;
+            border: none;
             background-color: $colorMain;
             transition: all .5s;
         }
@@ -165,6 +162,7 @@ footer {
         }
     }
 }
+
 @media only screen and (max-width: 769px) {
     .section {
         &__5 {
@@ -189,8 +187,6 @@ footer {
                 width: 205px;
                 margin-right: 10px;
             }
-            
         }
     }
 }
-

@@ -10,7 +10,6 @@
             margin-bottom: 5px;
         }
     }
-
     &__26 {
         input {
             padding: 10px 15px!important;
@@ -18,11 +17,16 @@
     }
 }
 
+.swiper-sp .row {
+    width: 100%;
+    justify-content: space-between;
+}
+
 .btn-collapse {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
     background-color: #f5f5f5;
     padding: 15px 20px;
     font-size: 14px;
@@ -31,6 +35,7 @@
     line-height: 18px;
     text-align: left;
 }
+
 .content {
     max-height: 0;
     overflow: hidden;
@@ -42,12 +47,13 @@
     text-align: left;
     p {
         border-top: 1px solid $colorMain;
-        padding: 15px 0 0;  
+        padding: 15px 0 0;
     }
     span {
-        padding: 5px 0px; 
+        padding: 5px 0px;
     }
 }
+
 .btn-collapse:after {
     content: "\ea4e";
     width: 20px;
@@ -55,11 +61,12 @@
     font-family: 'remixicon' !important;
     font-style: normal;
     font-size: 18px;
-    
 }
+
 .active-coll {
-    display:block;
+    display: block;
 }
+
 button.btn-collapse.active-coll:after {
     content: "\ea78";
     width: 20px;
@@ -69,17 +76,20 @@ button.btn-collapse.active-coll:after {
     font-size: 18px;
     color: $colorMain;
 }
+
 button.btn-collapse.active-coll {
     color: $colorMain;
-    
 }
+
 .btn-collapse {
     display: flex;
     align-items: center;
 }
+
 .icon-2 {
     display: none!important;
 }
+
 .swiper-pagination-support {
     margin-top: 30px!important;
 }
@@ -95,6 +105,7 @@ button.btn-collapse.active-coll {
 .pb-60 {
     padding-bottom: 60px;
 }
+
 @media only screen and (max-width: 768px) {
     .swiper-pagination.swiper-pagination-support.swiper-pagination-clickable.swiper-pagination-bullets {
         width: 100%;

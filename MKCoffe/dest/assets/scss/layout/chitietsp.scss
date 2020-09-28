@@ -156,6 +156,10 @@
             }
         }
         
+        .pt-70 {
+            padding-top: 65px;
+        }
+        
         .swiper-ctsp-2 {
             position: relative;
             overflow: hidden;
@@ -205,7 +209,6 @@
             .swiper-button-next-ctsp {
                 display: none!important;
             }
-            
         }
         
         @media only screen and (max-width: 1025px) {
@@ -216,9 +219,9 @@
                 display: none!important;
             }
             .section__23--see {
-              // max-width: ;
-              padding: 15px 0;
-              max-width: 130px;
+                // max-width: ;
+                padding: 15px 0;
+                max-width: 130px;
             }
         }
         

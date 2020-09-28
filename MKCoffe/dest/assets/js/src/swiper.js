@@ -17,6 +17,8 @@ var swiper = new Swiper('.swiper-sp', {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
     },
+    slidesPerView: 1,
+    spaceBetween: 5
 });
 
 // Chi tiet san pham
