@@ -60,7 +60,7 @@
         }
         
         .shadow-fill {
-            box-shadow: 6px 6px rgba($color: #f1f1f1, $alpha: 0.8);
+            box-shadow: 0px 5px 14px rgba(241,241,241,0.9)
         }
         
         .section-body {
@@ -87,17 +87,20 @@
         .section-4>.fp-tableCell {
             vertical-align: top;
         }
-        
-        @media only screen and (max-width:1200px) {}
-        
+       
+        .mb-30 {
+            margin-bottom: 30px;
+        }
         @media only screen and (max-width: 769px) {
-            .section {
+            .section-1, .section-4 {
                 padding-left: 0;
             }
             .section1,
             .section2,
             .section3 {
                 margin-top: 0px;
+                padding-left: 0px;
+                padding-top: 80px;
             }
             .section2 img {
                 text-align: center;
@@ -141,27 +144,32 @@
                 &-1 {
                     font-size: 30px;
                     text-align: center;
+                    display: block;
+                    border-bottom: 2px solid $colorMain;
+                    margin-bottom: 0;
                 }
+            }
+
+            .pt-3.mob-pt {
+                padding-top: 0!important;
+            }
+            
+            .my-80 {
+                margin: 20px 0;
+            }
+            .section2.section-4 {
+                margin-top: 20px;
             }
         }
         
-        @media only screen and (max-width: 572px) {
-            .section-3--item {
-                p {
-                    margin-top: 0!important;
-                }
-            }
+@media only screen and (max-width: 480px) {
+    .mob-font {
+        font-size: 25px;
+        &-2 {
+            font-size: 22px;
         }
-        
-        @media only screen and (max-width: 481px) {
-            main,
-            footer {
-                padding-top: 30px;
-                padding-left: 70px;
-            }
-            .section {
-                &-4 {
-                    padding-left: 70px;
-                }
-            }
-        }
+    }
+    .row .pt-3{
+        padding-top: 0!important;
+    }
+}

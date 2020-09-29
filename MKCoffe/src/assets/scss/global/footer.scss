@@ -14,9 +14,9 @@ footer {
         display: flex;
         max-width: 916px;
         width: 100%;
-        padding: 95px 0 185px;
+        padding: 0 0 185px;
         padding-bottom: 70px;
-        border-bottom: 2px dashed $colorMain;
+        
         &-form {
             display: flex;
             justify-content: space-between;
@@ -51,19 +51,21 @@ footer {
             width: 100%;
         }
         &-logo {
-            position: absolute;
-            right: 2%;
-            top: 27%;
+            margin-left: 20px;
         }
     }
     &__6 {
         display: flex;
         width: 100%;
         position: relative;
+        padding-top: 100px;
     }
     &__7 {
         font-weight: normal;
         padding-top: 70px;
+        border-top: 2px dashed $colorMain;
+        margin-top: -70px;
+        max-width: 916px;
         &-content {
             display: flex;
             flex-wrap: wrap;
@@ -72,7 +74,7 @@ footer {
         }
         &-item p,
         &-item a {
-            margin-bottom: 30px!important;
+            margin-bottom: 20px!important;
             display: block;
             color: #f3f3f4;
             &:hover {
@@ -98,7 +100,7 @@ footer {
         width: 100%;
         background-color: unset;
         border: unset;
-        border-bottom: 2px solid $colorMain;
+        border-bottom: 1px solid $colorMain;
         padding: 0 10px;
         color: #f3f3f4;
     }
@@ -152,9 +154,11 @@ footer {
             }
         }
         &__7 {
+            margin-top: -30px;
             &-item {
                 min-width: 45%;
                 text-align: center;
+                
             }
             &-content {
                 justify-content: space-around;
@@ -163,20 +167,16 @@ footer {
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     .section {
         &__5 {
             display: block;
-            padding-bottom: 40px;
+            padding-bottom: 80px!important;
             padding-top: 30px;
             font-size: 13px;
             &-social {
                 margin: 0;
                 margin-top: 20px;
-            }
-            &-logo {
-                margin-left: 50px;
-                padding-top: 150px;
             }
             &-form {
                 display: block;
@@ -187,6 +187,9 @@ footer {
                 width: 205px;
                 margin-right: 10px;
             }
+        }
+        &__8 {
+            padding: 50px 0;
         }
     }
 }

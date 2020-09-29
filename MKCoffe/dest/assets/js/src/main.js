@@ -3,14 +3,17 @@ var btnOpen = document.querySelector(".btn-search");
 var frmSearch = document.querySelector(".section__search");
 var frm = document.querySelector(".box__search");
 var btnClose = document.querySelector(".btn-close");
+var root = document.querySelector("html");
 btnOpen.onclick = function() {
     frmSearch.classList.add('active-1');
     frm.style.width = "100%";
+    root.style.overflow = "hidden";
 };
 
 btnClose.onclick = function() {
     frmSearch.classList.remove('active-1');
     frm.style.width = "0";
+    root.style.overflow = "visible";
 };
 
 // For Navigation
@@ -54,7 +57,3 @@ for (i = 0; i < coll.length; i++) {
 
 // Full Page
 
-var root = document.getElementsByTagName("html");
-var activing = document.querySelector("active-2", "active-1");
-
-onload.name;

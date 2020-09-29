@@ -191,23 +191,33 @@
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     .section {
         &__2 {
             &--part {
                 margin-top: 15px;
+                a {
+                    margin: 0;
+                }
             }
         }
         &-9 {
-            .row div {
-                padding-top: 0;
+            .mob-mg2  {
+                margin-top: 60px;
             }
         }
     }
     .mob-mg {
         margin-top: 0;
     }
-    .mob-mg2 {
-        margin-top: 100px;
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .section__2--part a {
+        font-size: 13px;
+    }
+    .section-9__box {
+        padding: 15px;
     }
 }

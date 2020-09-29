@@ -27,16 +27,22 @@ $colorBorder: rgba(207,
 }
 
 .container {
-    max-width: 1260px!important;
+    max-width: 1260px;
 }
 
 button {
     background-color: unset;
     border: unset;
 }
-
+p {
+    margin: 0!important;
+}
 img {
     width: 100%;
 }
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 580px){
+    .row {
+    margin: 0!important;
+    }
+}

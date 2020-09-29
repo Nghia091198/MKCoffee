@@ -60,6 +60,14 @@ var swiper = new Swiper('.swiper-ctsp-2', {
         //     slidesPerView: 4,
         //     spaceBetween: 40,
         // },
+        480: {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2300,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 20,
+        },
         768: {
             autoplay: {
                 delay: 2300,
