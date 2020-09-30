@@ -8,33 +8,41 @@ btnOpen.onclick = function() {
     frmSearch.classList.add('active-1');
     frm.style.width = "100%";
     root.style.overflow = "hidden";
+    btnNav.disabled = true;
 };
 
 btnClose.onclick = function() {
     frmSearch.classList.remove('active-1');
     frm.style.width = "0";
-    root.style.overflow = "visible";
+    root.style.overflow = "unset";
+    btnNav.disabled = false;
 };
 
 // For Navigation
 
-var btnNav = document.querySelector(".section-menu");
+var btnNav = document.querySelectorAll(".section-menu");
 var navMenu = document.querySelector(".section__navigation");
 var pushLeft = document.querySelector(".section-left");
 var btnClose = document.querySelector(".section-back");
 var content = document.querySelector(".navigation-box")
-btnNav.onclick = function() {
+for (var i =0 ; i < btnNav.length ; i++){
+btnNav[i].onclick = function() {
     navMenu.classList.add("active-3");
     content.classList.add("active-1");
     pushLeft.classList.add("active-2");
-    btnClose.classList.add("active-1")
+    btnClose.classList.add("active-1");
+    root.style.overflow = "hidden";
+    btnOpen.disabled = true;
 };
+}
 
 btnClose.onclick = function() {
     navMenu.classList.remove("active-3");
     pushLeft.classList.remove("active-2");
     content.classList.remove("active-1");
     btnClose.classList.remove("active-1");
+    root.style.overflow = "unset";
+    btnOpen.disabled = false;
 }
 
 // Collapse

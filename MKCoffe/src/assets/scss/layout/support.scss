@@ -119,8 +119,10 @@ button.btn-collapse.active-coll {
     width: 60%;
 }
 
-.btn-submit-2 {
-    padding: 7px 83px!important;
+.btn-submit {
+    &-2 {
+        padding: 7px 83px!important;
+    }
     &:hover {
         background-color: rgba($color: black, $alpha: 0.9);
        color: $colorMain;

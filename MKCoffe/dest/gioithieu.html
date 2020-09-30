@@ -16,23 +16,33 @@
     <!-- Lib FullPage -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/fullpage.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body id="body">
     <header class="section-1">
         <div class="container">
+
             <div class="section-1--box">
-                <button class="btn-search">
-                    <span class="material-icons">
-                        search
-                    </span>
-                </button>
-                <a href="#">
-                    Sản phẩm
-                </a>
-                <a href="#" class="mr-0">
-                    Liên hệ
-                </a>
+                <div class="section-menu section-menu-2">
+
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn-search">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </button>
+                    <a href="sanpham.html">
+                        Sản phẩm
+                    </a>
+                    <a href="lienhe.html" class="mr-0">
+                        Liên hệ
+                    </a>
+                </div>
+                
             </div>
             <div class="section__search">
                 <form class="box__search">
@@ -55,9 +65,9 @@
         <div class="section-left--logo">
             <img src="./assets/img/logo/Layer 3.png" alt="mkcoffee">
         </div>
-        <div class="section-menu">
+        <button class="section-menu">
 
-        </div>
+        </button>
         <button class="section-back">
             <span class="lnr lnr-arrow-left"></span>
         </button>
@@ -141,7 +151,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="row p-0">
                             <div class="col-12">
-                                <h3 class="title-3">
+                                <h3 class="title-3 mob-font">
                                     Tầm nhìn - Sứ mệnh
                                 </h3>
                             </div>
@@ -203,44 +213,57 @@
                 <h3 class="title-3 text-center p-3">
                     Chứng nhận
                 </h3>
-                <div class="section-3">
-                    <!-- -------1-------- -->
-                    <div class="section-3--item">
-                        <img src="./assets/img/gioithieu/1.jpg" alt="mkcoffee">
-                        <p class="content-1 mt-3 font-weight-bold">
-                            Hàng Việt Nam chất lượng cao
-                        </p>
+                <div class="swiper-container swiper-gt">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section-3--item">
+                                <img src="./assets/img/gioithieu/1.jpg" alt="mkcoffee">
+                                <p class="content-1 mt-3 font-weight-bold">
+                                    Hàng Việt Nam chất lượng cao
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <!-- -------2-------- -->
+                            <div class="section-3--item">
+                                <img src="./assets/img/gioithieu/5.jpg" alt="mkcoffee">
+                                <p class="content-1 mt-3 font-weight-bold">
+                                    Top 20 Thương hiệu Việt uy tín năm 2019
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                             <!-- -------3-------- -->
+                                <div class="section-3--item">
+                                    <img src="./assets/img/gioithieu/4.jpg" alt="mkcoffee">
+                                    <p class="content-1 mt-3 font-weight-bold">
+                                        Giải thưởng xếp hạng tín nhiệm doanh nghiệp năm 2020
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- -------4-------- -->
+                            <div class="section-3--item">
+                                <img src="./assets/img/gioithieu/2.jpg" alt="mkcoffee">
+                                <p class="content-1 mt-3 font-weight-bold">
+                                    Sản phẩm đạt cúp vàng lễ hội cà phê Buôn Ma Thuột 2019
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- -------5-------- -->
+                            <div class="section-3--item">
+                                <img src="./assets/img/gioithieu/3.jpg" alt="mkcoffee">
+                                <p class="content-1 mt-3 font-weight-bold">
+                                    Cúp vàng thương hiệu hội chợ triển lãm quốc tế Sài Gòn Expo 2019
+                                </p>
+                            </div>
+                             <!-- --------------- -->
+                        </div>
                     </div>
-                    <!-- -------2-------- -->
-                    <div class="section-3--item">
-                        <img src="./assets/img/gioithieu/5.jpg" alt="mkcoffee">
-                        <p class="content-1 mt-3 font-weight-bold">
-                            Top 20 Thương hiệu Việt uy tín năm 2019
-                        </p>
-                    </div>
-                    <!-- -------3-------- -->
-                    <div class="section-3--item">
-                        <img src="./assets/img/gioithieu/4.jpg" alt="mkcoffee">
-                        <p class="content-1 mt-3 font-weight-bold">
-                            Giải thưởng xếp hạng tín nhiệm doanh nghiệp năm 2020
-                        </p>
-                    </div>
-                    <!-- -------4-------- -->
-                    <div class="section-3--item">
-                        <img src="./assets/img/gioithieu/2.jpg" alt="mkcoffee">
-                        <p class="content-1 mt-3 font-weight-bold">
-                            Sản phẩm đạt cúp vàng lễ hội cà phê Buôn Ma Thuột 2019
-                        </p>
-                    </div>
-                    <!-- -------5-------- -->
-                    <div class="section-3--item">
-                        <img src="./assets/img/gioithieu/3.jpg" alt="mkcoffee">
-                        <p class="content-1 mt-3 font-weight-bold">
-                            Cúp vàng thương hiệu hội chợ triển lãm quốc tế Sài Gòn Expo 2019
-                        </p>
-                    </div>
-                    <!-- --------------- -->
                 </div>
+                
+                
             </div>
         </div>
     </main>
@@ -349,6 +372,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
     <!-- Main JS -->
     <script src="./assets/js/src/fullpage.min.js"></script>
     <script src="./assets/js/src/main.js"></script>
@@ -363,9 +389,47 @@
                 paddingTop: 0,
                 fixedElements: '.section-left, header,.section__navigation',
             });
-
         })
     </script>
+    <script>
+        var swiper = new Swiper('.swiper-gt', {
+          spaceBetween: 0,
+          centeredSlides: false,
+          slidesPerView: 2,
+          autoplay: {
+            delay: 999999,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            1200: {
+                slidesPerView: 5,
+                    autoplay: {
+                        delay: 99999,
+                        disableOnInteraction: false,
+
+                    },
+            },
+            768: {
+                    slidesPerView: 4,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+
+                    },
+                },
+        
+            480: {
+                    slidesPerView: 3,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: true,
+
+                    },
+                }
+          }
+            
+        });
+      </script>
 </body>
 
 </html>
