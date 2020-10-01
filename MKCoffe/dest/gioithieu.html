@@ -378,26 +378,14 @@
     <!-- Main JS -->
     <script src="./assets/js/src/fullpage.min.js"></script>
     <script src="./assets/js/src/main.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                autoScrolling: true,
-                scrollHorizontally: true,
-                // navigationPosition: 'right',
-                navigation: true,
-                responsiveHeight: 100,
-                paddingTop: 0,
-                fixedElements: '.section-left, header,.section__navigation',
-            });
-        })
-    </script>
+    
     <script>
         var swiper = new Swiper('.swiper-gt', {
           spaceBetween: 0,
           centeredSlides: false,
           slidesPerView: 2,
           autoplay: {
-            delay: 999999,
+            delay: 2500,
             disableOnInteraction: false,
           },
           breakpoints: {
@@ -422,7 +410,7 @@
                     slidesPerView: 3,
                     autoplay: {
                         delay: 2500,
-                        disableOnInteraction: true,
+                        disableOnInteraction: false,
 
                     },
                 }
