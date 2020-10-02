@@ -132,7 +132,7 @@
             <div class="section section-store">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-12">
+                        <div class="col-md-5 col-12 d-flex align-items-center">
                             <div class="store-img">
                                 <img src="./assets/img/index/giao-thoa.jpg" alt="">
                             </div>
@@ -235,7 +235,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -248,7 +248,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -261,7 +261,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-3 mob-none">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -282,7 +282,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -295,7 +295,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -308,7 +308,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 mob-none">
                                         <div class="section__11--item item--2 product-item">
                                             <img src="./assets/img/sanpham/Layer31.png" alt="mkcoffee">
                                             <div class="section__11--see section__23--see">
@@ -607,7 +607,7 @@
                 paddingTop: 0,
                 // fixedElements: '.section-left, header,.section__navigation',
                 onLeave: function(anchorLink, index, nextIndex, direction) {
-                    console.log(index);
+                    //console.log(index);
                     if (index != 0) {
                         header.addClass("bg-cl");
                     }
@@ -618,10 +618,10 @@
     <script>
         var swiper = new Swiper('.swiper-index', {
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            spaceBetween: 1000,
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    },
+             spaceBetween: 1000,
         });
     </script>
 </body>
@@ -631,8 +631,7 @@
         isLoop = false;
     }
     var swiper = new Swiper('.swiper-product', {
-
-
+        
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -640,6 +639,16 @@
         spaceBetween: 500,
         loop: isLoop,
         slidesPerView: 1,
+        autoplay: {
+            delay: 999999,
+        },
+        breakpoints: {
+            1400: {
+                autoplay: {
+                    delay: 2500,
+                }
+            }
+        }
     });
 </script>
 </body>
