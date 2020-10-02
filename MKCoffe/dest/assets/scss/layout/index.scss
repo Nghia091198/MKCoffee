@@ -1,5 +1,5 @@
     .bg-fullpage {
-        background: url(../../../assets/img/bg1.jpg) center center / cover no-repeat;
+        background: url(../../assets/img/bg1.jpg) center center / cover no-repeat;
         ;
         height: 100vh;
         padding-left: 100px;
@@ -318,4 +318,43 @@
             font-size: 16px;
             text-align: left;
         }
+    }
+
+    .community-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        a {
+            color: #090640;
+            margin-right: 40px;
+            &:hover {
+                color: $colorMain;
+                transition: all .2s;
+            }
+        }
+        a i {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #090640;
+            display: flex;
+        }
+    }
+
+    .section-community {
+        padding-left: 99px;
+    }
+
+    .community-fancy .col , .no-distance >[class*='col-'] {
+        padding-left: 0;
+        padding-right: 10px;
+    } 
+
+    .no-distance {
+        margin-right: 0!important;
+        margin-left: 0!important;
     }
